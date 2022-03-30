@@ -5,7 +5,7 @@
     $num = 0;
     $somapar = 0;
 
-    //foram usadas chaves para prevenção de quaisquer erros, o uso destas não era fulcral
+    //foram usadas chaves para prevenção de quaisquer erros mas o uso destas não era fulcral
 
     for($num = 1; $num < 100; $num++){
         if($num % 2 == 0){$somapar = $somapar + $num;}
