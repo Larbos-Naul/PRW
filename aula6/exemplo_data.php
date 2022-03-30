@@ -1,4 +1,6 @@
 <?php
-    echo
-    date('30/03/2022');
+
+    //EXEMPLO DE FORMATAÇÃO DE DATA
+
+    echo "Data atual: " .date('d/m/y'); //Exibindo data no formato "date/month/year"
 ?>
