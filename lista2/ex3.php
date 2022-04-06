@@ -12,7 +12,7 @@
             if($num % $divisor == 0){
                 break;
             }
-            else {echo "$num <br>"}
+            else {echo "$num <br>";}
             
             
         }
