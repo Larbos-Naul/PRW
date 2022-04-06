@@ -10,9 +10,9 @@
 
         for($divisor = 2; $divisor <= $num; $divisor++){ //Verificar se o número não é primo, exibe se "não não for primo"
             if($num % $divisor == 0){
-                break;
+                $primo = false;
             }
-            else {echo "$num <br>"; break;}
+            elseif($primo == true) {echo "$num <br>";}
             
         }
         
