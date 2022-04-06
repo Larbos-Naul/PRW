@@ -7,7 +7,7 @@
 
     for($num = 1; $num < 200; $num++){ //Repetição dos números a serem verificados
 
-        for($divisor = 2; $divisor <= $num; $divisor++){ //Verificar se o número não é primo, exibe se "não não for primo"
+        for($divisor = 2; $divisor < $num; $divisor++){ //Verificar se o número não é primo, exibe se "não não for primo"
             if($num % $divisor == 0){
                 break;
             }
