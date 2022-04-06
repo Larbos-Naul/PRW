@@ -14,7 +14,6 @@
             }
             else {echo "$num <br>";}
             
-            
         }
         
     }
