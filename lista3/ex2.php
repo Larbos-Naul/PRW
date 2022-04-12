@@ -16,6 +16,5 @@
     
     $palavra2 = $parte1."X".$parte2."X".$parte3.$parte4."X";
     echo $palavra2;
-
-
+    
 ?>
