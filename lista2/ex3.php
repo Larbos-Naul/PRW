@@ -1,6 +1,6 @@
 <?php
 
-    //Exercício 1 da lista 2
+    //Exercício 3 da lista 2
 
     $num = 0;
     $divisor = 0;
