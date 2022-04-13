@@ -23,7 +23,7 @@
                 print_r($vetor[$produto]);
             }
             else{
-                echo "preço inserido errado!!";
+                echo "preço inserido incorretamente!";
             }
     }
 ?>
