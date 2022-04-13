@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Questão 4 da prova</title>
+        <meta charset="utf-8"> <!--Só pra ter os acentos tudo bonitinho-->
+    </head>
+    <body>
+        <form method="get" action = questao4.php>
+    
+            <!--Entrada do nome da pessoa-->
+            <label>Digite seu nome: </label>
+            <input type="text"  name="nome" value=""><br><br>
+
+            <!--Escolha do estado federativo da pessoa-->
+            <label>Escolha seu estado: </label>
+            <select name="SelEstado" size=5>
+
+                <option>Amapá</option>
+                <option>Acre</option>
+                <option>Amazonas</option>
+                <option>Espirito Santo</option>
+                <option>Ceará</option>
+
+            </select> <br><br>
+
+            <!--Entrada do CPF da pessoa-->
+            <label>Digite seu cpf: </label>
+            <input type="text"  name="cpf" value=""><br>
+
+            <!--Entrada do RG da pessoa-->
+            <label>Digite seu RG: </label>
+            <input type="text"  name="rg" value=""><br>
+
+            <!--Escolha do sexo da pessoa-->
+            <label>Sexo: </label>
+            <input type="radio"  name="OptSexo" value="masculino">Masculino
+            <input type="radio"  name="OptSexo" value="feminino">Feminino <br>
+
+            <!--Entrada do Saldo do Cartão de Crédito da pessoa-->
+            <label>Digite seu saldo do cartão de crédito: </label>
+            <input type="text"  name="saldo" value="R$"><br>
+
+            <!--Entrada do total da compra da pessoa-->
+            <label>Digite o total da sua compra: </label>
+            <input type="text"  name="total" value="R$"> <br> <br>
+
+            <input type="submit"  value="enviar">
+        
+        
+        </form> 
+
+    </form>
+    </body>
+</html>
