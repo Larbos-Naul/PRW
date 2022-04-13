@@ -1,7 +1,7 @@
 <?php
     $produto = strtolower($_GET['produto']);
 
-    $vetor = array("mouse","teclado","monitor","GPU","processador","headset,"mouse");
+    $vetor = array("mouse","teclado","monitor","GPU","processador","headset");
     $i = array_search($produto, $vetor);
 
     if($i === false)
