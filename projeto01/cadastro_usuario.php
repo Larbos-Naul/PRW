@@ -6,7 +6,23 @@
     $email = $_GET['email'];
     $tel = $_GET['telefone'];
 
-    echo $nome .'<br>' .$email .'<br>' .$tel;
+    echo "Nome do usuário: ".$nome."<br>"
+    ."Email: ".$email."<br>"
+    ."Telefone: ".$tel;
+
+    $sql = "INSERT INTO  usuario (nome_usuario, email, telefone_usuario)
+                VALUES ('".$nome."', '".$email."', '".$tel."')";
+
+    $result = mysqli_query($con, $sql);
+
+    if($result)
+    {
+        echo "<br><br>Dados inseridos com sucesso!";
+    }
+    else
+    {
+        echo "<br><br>Erro ao inserir oo banco de dados: ".mysqli_error($con);
+    }
 
 
 ?>
