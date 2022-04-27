@@ -1,5 +1,6 @@
 -- Drop banco de dados
 -- drop database projeto01;
+drop database projeto01;
 
 -- Criação de Banco de Dados
 create database projeto01;
