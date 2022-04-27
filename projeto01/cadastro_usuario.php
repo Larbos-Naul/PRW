@@ -10,7 +10,7 @@
     ."Email: ".$email."<br>"
     ."Telefone: ".$tel;
 
-    $sql = "INSERT INTO  usuario (nome_usuario, email, telefone_usuario)
+    $sql = "INSERT INTO  usuario (nome_usuario, email_usuario, telefone_usuario)
                 VALUES ('".$nome."', '".$email."', '".$tel."')";
 
     $result = mysqli_query($con, $sql);
