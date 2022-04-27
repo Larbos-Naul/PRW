@@ -14,6 +14,4 @@
         exit;
     }
 
-    printf('Banco de dados conectado com sucesso! :D');
-
 ?>
