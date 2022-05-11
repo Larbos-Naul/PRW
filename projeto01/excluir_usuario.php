@@ -15,4 +15,4 @@
 		echo "Erro ao tentar excluir usuário: ".mysqli_error($con)."<br>";
   
 ?>
-<a href='index.php'> Voltar</a>
+<a href='index.php'> Voltar </a>
