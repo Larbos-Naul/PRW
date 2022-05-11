@@ -1,3 +1,9 @@
+drop database projeto02;
+
+create database projeto02;
+
+use projeto02;
+
 create table agenda (
     id_agenda int not null auto_increment,
     nome varchar(50) not null,
@@ -10,5 +16,5 @@ create table agenda (
     celular varchar(15) not null,
     email varchar(70) not null,
     dt_cadastro date not null,
-    PRIMARY KEY id_agenda
+    primary key (id_agenda)
 )
