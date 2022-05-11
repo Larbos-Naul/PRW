@@ -1,44 +1,46 @@
 <?php
-    include("conecxao.php");
-    $id_usuario = $_GET["id_usuario"];
-    $sql = "SELECT * FROM usuario WHERE id_usuario='$id_usuario'";
-    $result = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($result);
+   include('conexao.php');
+   $id_usuario = $_GET['id_usuario'];
+   $sql = 'SELECT * FROM usuario where id_usuario='.$id_usuario;
+   $result = mysqli_query($con, $sql);
+   $row = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="altera_usuario.css">
-    <title>Cadastro de usuários</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <form action="altera_usuario_exe.php" method="post">
-        <table>
-            <tr>
-                <th colspan="2">Cadastro de Clientes - IFSP</th>
-            </tr>
-            <tr>
-                <td><p>Nome:</p></td>
-                <td><input type="text" class="inpTxt" name="nome_usuario" maxlength="50"
-                value="<?php echo $row['nome_usuario'] ?>"></td>
-            </tr>
-            <tr>
-                <td><p>E-mail:</p></td>
-                <td><input type="text" class="inpTxt" name="email_usuario" maxlength="50"
-                value="<?php echo $row['email_usuario'] ?>"></td>
-            </tr>
-            <tr>
-                <td><p>Telefone:</p></td>
-                <td><input type="text" class="inpTxt inpTel" name="telefone_usuario" maxlength="30"
-                value="<?php echo $row['telefone_usuario'] ?>"></td>
-            </tr>
-            <tr>
-                <<input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
-                <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>
-            </tr>
-        </table>   
-    </form>
+    <h1>Cadastro de Clientes  - IFSP</h1>
+    <div id="teste">
+        <form method="post" action="altera_usuario_exe.php">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <div class="form-item">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" value="<?php echo $row['nome_usuario']?>" placeholder="Digite o nome">
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" value="<?php echo $row['email_usuario']?>" placeholder="Digite o email">
+                </div>
+                <div class="form-item">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" value="<?php echo $row['telefone_usuario']?>" placeholder="Digite o Telefone">
+                </div>
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" >
+                    <a href='index.php'> Voltar</a>
+                </div>
+                <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
+                
+
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
