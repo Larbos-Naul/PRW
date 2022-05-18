@@ -3,12 +3,12 @@
     $id_agenda = $_POST['id_agenda'];
     $nome = $_POST['nome'];
     $apelido = $_POST['apelido'];
-    $endereco = $_POST['endereco'];
+    $endereco = $_POST['end'];
     $bairro = $_POST['bairro'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
-    $telefone = $_POST['telefone'];
-    $celular = $_POST['celular'];
+    $telefone = $_POST['tel'];
+    $celular = $_POST['cel'];
     $email = $_POST['email'];
     
     echo "<h1> Alteração de dados </h1>";
