@@ -50,7 +50,7 @@
             echo '<td>' .$row['telefone'] .'</td>';
             echo '<td>' .$row['celular'] .'</td>';
             echo '<td>' .$row['email'] .'</td>';
-            echo "<td><a href=Excluir_agenda.php?id_agenda=" .$row['id_agenda']."'>Excluir</a></td>";
+            echo "<td><a href=Excluir_agenda.php?id_agenda=" .$row['id_agenda'].">Excluir</a></td>";
             echo '</tr>';
         }
     ?>
