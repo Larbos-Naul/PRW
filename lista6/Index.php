@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Menu Principal das agendinhas</title>
+    <title>Menu Principal</title>
 
     <link rel="stylesheet" href="estilo.css">
 
@@ -13,8 +13,8 @@
     <br>
     <div id='menu'>
         <ul>
-            <li><a href="cadastro_usuario.html">Cadastrar agenda</a></li>
-            <li><a href="listar_usuarios.php">Listar agendas</a></li>
+            <li><a href="Cadastro_agenda.html">Cadastrar agenda</a></li>
+            <li><a href="Listar_agenda.php">Listar agendas</a></li>
         </ul>
     </div>
 </body>

@@ -1,8 +1,8 @@
-drop database projeto02;
+drop database Lista6;
 
-create database projeto02;
+create database Lista6;
 
-use projeto02;
+use Lista6;
 
 create table agenda (
     id_agenda int not null auto_increment,

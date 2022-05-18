@@ -1,5 +1,5 @@
 <?php
-   include('conexao.php');
+   include('Conexao.php');
    $id_usuario = $_GET['id_usuario'];
    $sql = 'SELECT * FROM usuario where id_usuario='.$id_usuario;
    $result = mysqli_query($con, $sql);
@@ -11,11 +11,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de clientes</title>
+    <title>Cadastro de Agendas</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    <h1>Cadastro de Clientes  - IFSP</h1>
+    <h1>Cadastro de Agendas - IFSP</h1>
     <div id="teste">
         <form method="post" action="altera_usuario_exe.php">
             <fieldset>
