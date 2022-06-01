@@ -18,7 +18,7 @@
 <body>
     <h1>Cadastro de Agendas - IFSP</h1>
     <div id="teste">
-        <form method="post" action="Altera_agenda_exe.php">
+        <form method="post" action="Altera_agenda_exe.php" enctype='multipart/form-data'>
             <fieldset>
                 <legend>Cadastro</legend>
                 <div class="form-item">
