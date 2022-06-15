@@ -3,7 +3,6 @@ drop database if exists Prova2;
 create database Prova2;
 
 use Prova2;
-DROP TABLE IF EXISTS fluxo_caixa;
 
 CREATE TABLE fluxo_caixa (
 
