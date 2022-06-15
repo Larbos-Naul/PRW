@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fluxo de caixa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>Cadastro de Fluxo de Caixa</h1>
+    <div id="teste">
+        <form method="post" action="Cadastro_fluxo_caixa.php" enctype='multipart/form-data'>
+            <fieldset>
+                <legend>Cadastro de Fluxo de caixa</legend>
+
+                <div class="form-item">
+                    <label for="data">Data: </label>
+                    <input type="date" id="data" name="data" placeholder="">
+                </div>
+
+                <div class="form-item">
+                    <label for="tipo">Tipo: </label>
+                    <input type="radio" id="tipo" name="tipo" value="entrada"> Entrada <br><br>
+                    <input type="radio" id="tipo" name="tipo" value="saida"> Saída
+                </div>
+
+                <div class="form-item">
+                    <label for="valor">Valor: </label>
+                    <input type="double" id="valor" name="valor" placeholder="Digite o valor">
+                </div>
+
+                <div class="form-item">
+                    <label for="historico">Histórico: </label>
+                    <input type="text" id="historico" name="historico" placeholder="Digite o histórico">
+                </div>
+
+                <div class="form-item">
+                    <label for="cheque">Cheque: </label>
+                    <select name="cheque" id="cheque">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" >
+                    <a href='index.php'> Voltar</a>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
